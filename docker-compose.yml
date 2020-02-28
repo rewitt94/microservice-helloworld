@@ -1,0 +1,28 @@
+version: '3'
+networks:
+  mad:
+    driver: bridge
+services:
+  gateway:
+    image: mad-gateway
+    container_name: mad-gateway
+    ports:
+      - "3000:3000"
+    networks:
+      - mad
+  forum:
+    image: mad-forum
+    container_name: mad-forum
+    networks:
+      - mad
+  users:
+    image: mad-users
+    container_name: mad-users
+    networks:
+      - mad
+  frontend:
+    image: mad-frontend
+    container_name: mad-frontend
+    networks:
+      - mad
+    

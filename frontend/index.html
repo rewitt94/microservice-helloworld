@@ -1,0 +1,26 @@
+<h1>Helloworld</h1>
+
+<p>log</p>
+<p id="log"></p>
+
+<script>
+    setInterval(async () => { 
+        fetch("http://localhost:3000/forum/hello")
+        .then(res => res.text())
+        .then(text => {
+            element = document.getElementById("log")
+            document.getElementById("log").innerHTML = document.getElementById("log").innerHTML + "<br /> " + text
+            console.log(text)
+        }) 
+        await new Promise((res, rej) => {
+            setTimeout(res, 2000)
+        }) 
+        fetch("http://localhost:3000/users/hello")
+        .then(res => res.text())
+        .then(text => {
+            element = document.getElementById("log")
+            document.getElementById("log").innerHTML = document.getElementById("log").innerHTML + "<br /> " + text
+            console.log(text)
+        }) 
+    }, 4000);
+</script>

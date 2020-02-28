@@ -1,0 +1,26 @@
+0. Create master branch 
+    1. ensure deployment to ec2
+    2. setup/configure CI
+
+1. Frontend - Create React App
+    1.1 Frontend Login Flow
+        1.1.1 Integrate with backend
+    1.2.0 Frontend "News Feed"
+        1.2.1 Integrate with backend
+
+2. Users - Create Web Service & Connect Database
+    3.1 Service Account Creation
+    3.1 User Service Authentication (oauth2?)
+    3.1 User Service Authorisation (oauth2?)
+
+3. Forum - Create Web Service & Connect Database
+    4.1 Forum questions & comments
+    4.2 Forum upvoted & downvotes
+
+4. Api-gateway setup proxy
+
+5. Setup Api-tests
+    6.x various flows
+
+6. Setups Selenium-Tests
+    6.x various user journeys
